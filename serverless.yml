@@ -1,0 +1,19 @@
+service: aws-python-alexa-skill
+
+frameworkVersion: ">=1.4.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: python2.7
+
+plugins:
+  - serverless-python-requirements
+
+functions:
+  dadjoke:
+    handler: handler.dadjoke
+    events:
+      - alexaSkill: amzn1.ask.skill.f50ec174-32f8-402d-ba9d-5b31605aebea
+      - http:
+          method: get
+          path: /

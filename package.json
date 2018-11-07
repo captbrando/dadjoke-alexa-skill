@@ -1,0 +1,10 @@
+{
+  "name": "aws-alexa-skill",
+  "version": "1.0.0",
+  "description": "This example demonstrates how to use an AWS Lambdas for your custom Alexa skill.",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "serverless-python-requirements": "^4.2.5"
+  }
+}
